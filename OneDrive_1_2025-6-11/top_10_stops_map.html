@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e42bdc887fde17c40b6d832a744c4299 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e42bdc887fde17c40b6d832a744c4299" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e42bdc887fde17c40b6d832a744c4299 = L.map(
+                "map_e42bdc887fde17c40b6d832a744c4299",
+                {
+                    center: [46.79020483873299, 7.12752710556592],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4d9dc07cb2ff6b3e1bb01b832b60f1f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f4d9dc07cb2ff6b3e1bb01b832b60f1f.addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+            var marker_edf724ca0764d014c3298a99b3c2ec5e = L.marker(
+                [46.79646024106856, 7.146624907627937],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_588df6672b57ed4c8017a8ae3c1661ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55a634dbbd5fd593933229fee86d8dfc = $(`<div id="html_55a634dbbd5fd593933229fee86d8dfc" style="width: 100.0%; height: 100.0%;">Fribourg/Freiburg, gare routière<br>Total: 138656</div>`)[0];
+                popup_588df6672b57ed4c8017a8ae3c1661ed.setContent(html_55a634dbbd5fd593933229fee86d8dfc);
+            
+        
+
+        marker_edf724ca0764d014c3298a99b3c2ec5e.bindPopup(popup_588df6672b57ed4c8017a8ae3c1661ed)
+        ;
+
+        
+    
+    
+            marker_edf724ca0764d014c3298a99b3c2ec5e.bindTooltip(
+                `<div>
+                     Fribourg/Freiburg, gare routière
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_472b182f7c66ff402997750fe9b27b60 = L.marker(
+                [46.80298219769091, 7.151597127866657],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_8b76c30c84ed9894b63f56d6e320a25b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0237c9c41bfc5aa84b52681682fdb8e0 = $(`<div id="html_0237c9c41bfc5aa84b52681682fdb8e0" style="width: 100.0%; height: 100.0%;">Fribourg/Freiburg, Pl. Gare<br>Total: 9617</div>`)[0];
+                popup_8b76c30c84ed9894b63f56d6e320a25b.setContent(html_0237c9c41bfc5aa84b52681682fdb8e0);
+            
+        
+
+        marker_472b182f7c66ff402997750fe9b27b60.bindPopup(popup_8b76c30c84ed9894b63f56d6e320a25b)
+        ;
+
+        
+    
+    
+            marker_472b182f7c66ff402997750fe9b27b60.bindTooltip(
+                `<div>
+                     Fribourg/Freiburg, Pl. Gare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7276b428e23bd22cd14c33c0004524ab = L.marker(
+                [46.80741130133383, 7.175279395829419],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_ff090afcb2f88993018724bf52f824ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b58e71dafaf1e37b381c07f93dcf0b4 = $(`<div id="html_7b58e71dafaf1e37b381c07f93dcf0b4" style="width: 100.0%; height: 100.0%;">Fribourg, Musy 4<br>Total: 2917</div>`)[0];
+                popup_ff090afcb2f88993018724bf52f824ec.setContent(html_7b58e71dafaf1e37b381c07f93dcf0b4);
+            
+        
+
+        marker_7276b428e23bd22cd14c33c0004524ab.bindPopup(popup_ff090afcb2f88993018724bf52f824ec)
+        ;
+
+        
+    
+    
+            marker_7276b428e23bd22cd14c33c0004524ab.bindTooltip(
+                `<div>
+                     Fribourg, Musy 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2a4883f546c1f3f1fee498010baa13c6 = L.marker(
+                [46.80398714047302, 7.155441230674721],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_155bdf1e8f7ce502aaa3a0f66fd0db9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36510e3782867c9c103e1601df3ffbbe = $(`<div id="html_36510e3782867c9c103e1601df3ffbbe" style="width: 100.0%; height: 100.0%;">Fribourg, St-Pierre<br>Total: 2634</div>`)[0];
+                popup_155bdf1e8f7ce502aaa3a0f66fd0db9e.setContent(html_36510e3782867c9c103e1601df3ffbbe);
+            
+        
+
+        marker_2a4883f546c1f3f1fee498010baa13c6.bindPopup(popup_155bdf1e8f7ce502aaa3a0f66fd0db9e)
+        ;
+
+        
+    
+    
+            marker_2a4883f546c1f3f1fee498010baa13c6.bindTooltip(
+                `<div>
+                     Fribourg, St-Pierre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_45a6c26a6a81ce3c34a9349802881cdb = L.marker(
+                [46.802125568473706, 7.1462173470325805],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_5777f0afe20511c78a32b15055ce54f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02f25994b290f21b6364fca1125f1e04 = $(`<div id="html_02f25994b290f21b6364fca1125f1e04" style="width: 100.0%; height: 100.0%;">Fribourg, Beauregard<br>Total: 2429</div>`)[0];
+                popup_5777f0afe20511c78a32b15055ce54f7.setContent(html_02f25994b290f21b6364fca1125f1e04);
+            
+        
+
+        marker_45a6c26a6a81ce3c34a9349802881cdb.bindPopup(popup_5777f0afe20511c78a32b15055ce54f7)
+        ;
+
+        
+    
+    
+            marker_45a6c26a6a81ce3c34a9349802881cdb.bindTooltip(
+                `<div>
+                     Fribourg, Beauregard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f2acd91dd2929a589fd931f194a61a8a = L.marker(
+                [46.79450829435004, 7.157318081964872],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_21662deb839b72dae7509f6f4f7ef80a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c54f05b257fc6e8a8d4f95deb7588ef = $(`<div id="html_3c54f05b257fc6e8a8d4f95deb7588ef" style="width: 100.0%; height: 100.0%;">Fribourg, Charmettes<br>Total: 2181</div>`)[0];
+                popup_21662deb839b72dae7509f6f4f7ef80a.setContent(html_3c54f05b257fc6e8a8d4f95deb7588ef);
+            
+        
+
+        marker_f2acd91dd2929a589fd931f194a61a8a.bindPopup(popup_21662deb839b72dae7509f6f4f7ef80a)
+        ;
+
+        
+    
+    
+            marker_f2acd91dd2929a589fd931f194a61a8a.bindTooltip(
+                `<div>
+                     Fribourg, Charmettes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7c345eca9d50badf3c7579e204dd36c = L.marker(
+                [46.80618094451278, 7.161404364971983],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_cad125488210ed60ef734d22daf3987a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_315e504a1cef1915a438b804a1899d7f = $(`<div id="html_315e504a1cef1915a438b804a1899d7f" style="width: 100.0%; height: 100.0%;">Fribourg, Tilleul/Cathédrale<br>Total: 1895</div>`)[0];
+                popup_cad125488210ed60ef734d22daf3987a.setContent(html_315e504a1cef1915a438b804a1899d7f);
+            
+        
+
+        marker_e7c345eca9d50badf3c7579e204dd36c.bindPopup(popup_cad125488210ed60ef734d22daf3987a)
+        ;
+
+        
+    
+    
+            marker_e7c345eca9d50badf3c7579e204dd36c.bindTooltip(
+                `<div>
+                     Fribourg, Tilleul/Cathédrale
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_929370d8484413815c8fc979311cf8c0 = L.marker(
+                [46.7894465221412, 7.117962170524201],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_71ffbf9a01e5f3c028170eeda717842d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e824b90dc5562bdcbe142f486c45c1c = $(`<div id="html_1e824b90dc5562bdcbe142f486c45c1c" style="width: 100.0%; height: 100.0%;">Villars-sur-Glâne, gare<br>Total: 1662</div>`)[0];
+                popup_71ffbf9a01e5f3c028170eeda717842d.setContent(html_1e824b90dc5562bdcbe142f486c45c1c);
+            
+        
+
+        marker_929370d8484413815c8fc979311cf8c0.bindPopup(popup_71ffbf9a01e5f3c028170eeda717842d)
+        ;
+
+        
+    
+    
+            marker_929370d8484413815c8fc979311cf8c0.bindTooltip(
+                `<div>
+                     Villars-sur-Glâne, gare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_291b1872e64f4a3b6f5a4bbf6365cabd = L.marker(
+                [46.69254580655814, 6.912320103901091],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_0f178ddf95450be403a24944f171ed45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1deed0dff663cf8d21c65a8c80534283 = $(`<div id="html_1deed0dff663cf8d21c65a8c80534283" style="width: 100.0%; height: 100.0%;">Romont FR, gare<br>Total: 1644</div>`)[0];
+                popup_0f178ddf95450be403a24944f171ed45.setContent(html_1deed0dff663cf8d21c65a8c80534283);
+            
+        
+
+        marker_291b1872e64f4a3b6f5a4bbf6365cabd.bindPopup(popup_0f178ddf95450be403a24944f171ed45)
+        ;
+
+        
+    
+    
+            marker_291b1872e64f4a3b6f5a4bbf6365cabd.bindTooltip(
+                `<div>
+                     Romont FR, gare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9f3cfdb79f084bb065139aac691844a9 = L.marker(
+                [46.806400370727715, 7.15110632526574],
+                {
+}
+            ).addTo(map_e42bdc887fde17c40b6d832a744c4299);
+        
+    
+        var popup_92572cef89d10aba536b08a51a680f64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d97a398c3e3d2ba0419b14c0ae094fb2 = $(`<div id="html_d97a398c3e3d2ba0419b14c0ae094fb2" style="width: 100.0%; height: 100.0%;">Fribourg, Gambach<br>Total: 1632</div>`)[0];
+                popup_92572cef89d10aba536b08a51a680f64.setContent(html_d97a398c3e3d2ba0419b14c0ae094fb2);
+            
+        
+
+        marker_9f3cfdb79f084bb065139aac691844a9.bindPopup(popup_92572cef89d10aba536b08a51a680f64)
+        ;
+
+        
+    
+    
+            marker_9f3cfdb79f084bb065139aac691844a9.bindTooltip(
+                `<div>
+                     Fribourg, Gambach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
